@@ -5,7 +5,7 @@ String tittle
 String author
 String isbn
 Date dateBorrowed
-Date returnDate
+Date dateReturned
 String student
 
 
@@ -19,7 +19,7 @@ tittle()
 author()
 isbn()
 dateBorrowed()
-returnDate()
+dateReturned()
 student()
 
     }

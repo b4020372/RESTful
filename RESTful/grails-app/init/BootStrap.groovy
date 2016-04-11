@@ -1,6 +1,123 @@
+import com.RESTful.*
+
 class BootStrap {
 
-    def init = { servletContext ->
+def init = { servletContext ->
+
+//COURSES
+
+def course1= new Course( title:'Interactive Media with Animation',
+code:'IMA101',
+tutor:'Tonderai',
+department:'Computing',
+description:''' A pulp inhabits the sufferer over an ideal blackboard. An aforementioned fascist solos below the more consumer. The geared brush proceeds after his peripheral. A regret crashes opposite the main surface. A giving crunch fakes a bone underneath the punished blast. Its lip triumphs on top of this inertia!''').save()
+
+def course2= new Course( title:'Interactive sam design',
+code:'8008',
+tutor:'Beth',
+department:'Cooking',
+description:''' NUMBER 2A pulp inhabits the sufferer over an ideal blackboard. An aforementioned fascist solos below the more consumer. The geared brush proceeds after his peripheral. A regret crashes opposite the main surface. A giving crunch fakes a bone underneath the punished blast. Its lip triumphs on top of this inertia!''').save()
+
+def course3= new Course( title:'puppet animation',
+code:'4634',
+tutor:'lily',
+department:'YOYO show',
+description:''' COURSE 3 A pulp inhabits the sufferer over an ideal blackboard. An aforementioned fascist solos below the more consumer. The geared brush proceeds after his peripheral. A regret crashes opposite the main surface. A giving crunch fakes a bone underneath the punished blast. Its lip triumphs on top of this inertia!''').save()
+
+
+//BOOK
+
+def book1= new Book(tittle:'Harry Potter',
+author:'JKROWLING',
+isbn:'4363',
+dateBorrowed: new Date('19/01/2015'),
+dateReturned: new Date('29/01/2015'),
+student:'Sam Adams').save()
+
+def book2= new Book(tittle:'BFG',
+author:'ROHL DAHL',
+isbn:'436547573',
+dateBorrowed: new Date('11/01/2015'),
+dateReturned: new Date('29/01/2015'),
+student:'Sam Adams').save()
+
+def book3= new Book(tittle:'Peter Rabbit',
+author:'Rabbit',
+isbn:'4363-56757',
+dateBorrowed: new Date('12/02/2015'),
+dateReturned: new Date('20/03/2015'),
+student:'Sam Adams').save()
+
+
+//STUDENT
+
+def student1= new Student(name:'Sam Adams',
+email:'Sam_adams@live.co.uk',
+studentId:'4363-56757',
+course: 'Computing',
+student:'Sam Adams').save()
+
+def student2= new Student(name:'Isac beth',
+email:'beth_osac@live.co.uk',
+studentId:'4363-5677757',
+course: 'cooking',
+student:'Isac beth').save()
+
+def student3= new Student(name:'Luke jones',
+email:'luke_jones@live.co.uk',
+studentId:'4444363-56757',
+course: 'Engineering',
+student:'Luke Jones').save()
+
+
+
+
+//LIBARY
+
+
+
+def libary1= new Libary(location:'Scunthrope',
+openingHours:'9-5',
+book:'Wizard of Oz',
+student: 'Roger James',
+librarian:'Margret Old').save()
+
+def libary2= new Libary(location:'Doncaster',
+openingHours:'10-2',
+book:'Lion With and the WardRobe',
+student: 'Ian Duncan',
+librarian:'Margret Young').save()
+
+
+def libary3= new Libary(location:'Rotherham',
+openingHours:'1-2',
+book:'How To do well at Uni',
+student: 'Sam Adams',
+librarian:'Beth Geroges').save()
+
+
+//LIBARARIAN
+
+def librarian1= new Librarian(name:'Maggie Thatcher',
+email:'maggie_thatcher@live.co.uk',
+userName:'M48956858',
+password: 'IlikeCoalMines',
+telephone:'01530223269').save()
+
+def librarian2= new Librarian(name:'Tony Blair',
+email:'Tony_blair@live.co.uk',
+userName:'T47956858',
+password: 'PolitcalLies',
+telephone:'01530223277').save()
+
+def librarian3= new Librarian(name:'Boris Johnson',
+email:'boris_Johnson@live.co.uk',
+userName:'B4657956858',
+password: 'ImaCoolGuy',
+telephone:'01530223555').save()
+
+
+
     }
     def destroy = {
     }
