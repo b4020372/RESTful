@@ -6,7 +6,7 @@ String author
 String isbn
 Date dateBorrowed
 Date dateReturned
-String student
+Student student
 
 
 String toString(){
